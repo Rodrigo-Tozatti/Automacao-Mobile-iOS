@@ -9,7 +9,7 @@ setCommonPlugins();
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
   name: 'automation_appium',
-  tests: './*_test.js',
+  tests: './Testes_Mobile/*_test.js',
   output: './output',
   helpers: {
     Appium: {
@@ -28,6 +28,8 @@ exports.config = {
   include: {
     I: './steps_file.js', // Local do arquivo de etapas
 
-    loginPage: "./pages/login_page.js"
+    //loginPage: "./pages/login_page.js",
+    tela_LoginPage: "./pages/Tela_Login.js",
+    tela_InicialPage: "./pages/Tela_Inicial.js",
   },
 };
