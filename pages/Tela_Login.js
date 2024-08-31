@@ -24,7 +24,7 @@ module.exports = {
   },
 
   validarMensagemErro(){
-    I.waitForElement(this.menssage.mensagemErro, 5);
+    I.waitForElement(this.menssage.mensagemErro, 3);
     I.seeElement(this.menssage.mensagemErro)
   }
 }
