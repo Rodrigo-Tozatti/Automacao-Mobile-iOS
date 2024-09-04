@@ -20,14 +20,14 @@ exports.config = {
     tela_InicialPage: './pages/Tela_Inicial.js'
   },
   mocha: {},
-  bootstrap: null,
+  //bootstrap: './Server/server.js',
   timeout: null,
-  teardown: null,
+  //teardown: './Server/server.js',
   hooks: [],
-  gherkin: {
+  /*gherkin: {
     features: './features/*.feature',
     steps: ['./step_definitions/steps.js']
-  },
+  },*/
   plugins: {
     screenshotOnFail: {
       enabled: true
@@ -44,7 +44,9 @@ exports.config = {
     eachElement: {
       enabled: true
     },
-    pauseOnFail: {}
+    pauseOnFail: {
+      enabled: true
+    }
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{
@@ -57,5 +59,5 @@ exports.config = {
     }
   ],
   name: 'automation_appium',
-  //tests: './Testes_Mobile/*_test.js' // Comentei essa linha para rodar apenas o Gherkin
+  tests: './Testes_Mobile/*_test.js' // Comentei essa linha para rodar apenas o Gherkin
 }

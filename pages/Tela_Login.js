@@ -19,6 +19,7 @@ module.exports = {
 
   realizarLogin(email, senha){
     I.fillField(this.fields.email, email),
+    //pause()
     I.fillField(this.fields.login, senha),
     I.click(this.buttons.entrar)
   },

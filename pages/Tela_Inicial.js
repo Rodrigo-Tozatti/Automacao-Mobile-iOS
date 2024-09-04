@@ -10,6 +10,7 @@ module.exports = {
 
   validarBotao(){
     I.waitForElement(this.buttons.botao, 5);
+    pause()
     I.seeElement(this.buttons.botao)
   }
   
