@@ -1,11 +1,9 @@
 module.exports = {
-    bootstrap() {
+    bootstrap: async function () {
         console.log('Executando o bootstrap...');
-        // Comandos síncronos, como imprimir no console, inicializar variáveis simples, etc.
     },
 
-    teardown() {
+    teardown: async function () {
         console.log('Executando o teardown...');
-        // Comandos síncronos, como limpar variáveis, etc.
     }
 };

@@ -1,3 +1,5 @@
+const steps = require('./step_definitions/*.js')
+
 exports.config = {
   output: './output',
   helpers: {
@@ -20,14 +22,14 @@ exports.config = {
     tela_InicialPage: './pages/Tela_Inicial.js'
   },
   mocha: {},
-  //bootstrap: './Server/server.js',
+  //bootstrap: null,
   timeout: null,
-  //teardown: './Server/server.js',
+  //teardown: null,
   hooks: [],
-  /*gherkin: {
+  gherkin: {
     features: './features/*.feature',
-    steps: ['./step_definitions/steps.js']
-  },*/
+    steps: ['./step_definitions/*.js']
+  },
   plugins: {
     screenshotOnFail: {
       enabled: true
@@ -59,5 +61,5 @@ exports.config = {
     }
   ],
   name: 'automation_appium',
-  tests: './Testes_Mobile/*_test.js' // Comentei essa linha para rodar apenas o Gherkin
+  //tests: './Testes_Mobile/*_test.js'
 }

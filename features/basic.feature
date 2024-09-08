@@ -1,14 +1,11 @@
-#language: pt
 
-Funcionalidade: Login
-Como usuário do App Qazando
-Quero fazer login na plataforma
+Feature: Business rules
+  Como usuário do App Qazando
+  Quero fazer login 
+  Para acessar a plataforma
 
-
-Cenário: 01 - Realizar login com sucesso
-Dado que eu digite o email
-E a senha
-Quando eu clicar no botão Entrar
-Então devo ver o botão Salvar
-
-
+  Scenario: Cenário 001 - Deve fazer login com sucesso
+    Given eu preecnha o email
+    And a senha corretamente
+    When clicar no botão Entrar
+    Then o App deve fazer o login na plataforma e validar o botão Salvar

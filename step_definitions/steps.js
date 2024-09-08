@@ -1,20 +1,19 @@
 const { I } = inject();
-// Add in your custom step files
+const step_definitions = require('./*.js')
 
-
-Dado('que eu digite o email', () => {
+Given('eu preecnha o email', () => {
   I.fillField('~email', 'teste@teste.com');
 });
 
-E('a senha', () => {
+And('a senha corretamente', () => {
   I.fillField('~senha', '123456');
 });
 
-Quando('eu clicar no botão Entrar', () => {
-  I.click('~entrar');
+When('clicar no botão Entrar', () => {
+  I.tap('~entrar');
 });
 
-Então('devo ver o botão Salvar', () => {
-  I.waitForElement('~salvar', 5);
-  I.seeElement('~salvar');
+Then('o App deve fazer o login na plataforma e validar o botão Salvar', () => {
+  I.waitForElement('~salvar', 3)
+    I.seeElement('~salvar');
 });
