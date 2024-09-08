@@ -26,10 +26,10 @@ exports.config = {
   timeout: null,
   //teardown: null,
   hooks: [],
-  gherkin: {
+  /*gherkin: {
     features: './features/*.feature',
     steps: ['./step_definitions/*.js']
-  },
+  },*/
   plugins: {
     screenshotOnFail: {
       enabled: true
@@ -61,5 +61,5 @@ exports.config = {
     }
   ],
   name: 'automation_appium',
-  //tests: './Testes_Mobile/*_test.js'
+  tests: './Testes_Mobile/*_test.js'
 }
