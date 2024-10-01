@@ -1,27 +1,20 @@
-Feature('login');
+//const Tela_login = require("./pages/Tela_login");
+const { I, Tela_login } = inject
 
-Scenario('Cenário 01: Realizar login com sucesso',  ({ I }) => {
-    
-    //preencher campos
-    I.fillField('~email', 'teste@teste.com')
-    I.fillField('~senha', '123456')
+Feature('CT001 - Login na plataforma');
 
-    //clicar botão Entrar
-    I.click('~entrar')
+Scenario('Cenário 01: Realizar login com sucesso',  ({ }) => {
+
+    Tela_login.realizarLogin('teste@teste.com', '123456')
 
     //checar
-    I.waitForElement('~salvar', 3)
+    I.waitForElement('~salvar', 2)
     I.seeElement('~salvar')
 });
 
-Scenario.only('Cenário 02: Tentativa de login com senha errada',  ({ I }) => {
+Scenario('Cenário 02: Tentativa de login com senha errada',  ({ }) => {
     
-    //preencher campos
-    I.fillField('~email', 'teste2@teste.com')
-    I.fillField('~senha', '123456')
-
-    //clicar botão Entrar
-    I.click('~entrar')
+    Tela_login.realizarLogin('teste2@teste.com', '123456')
 
     //checar
     I.waitForElement('lognFail', 2)
