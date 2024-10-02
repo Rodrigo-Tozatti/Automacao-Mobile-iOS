@@ -27,6 +27,6 @@ exports.config = {
   },
   include: {
     I: './steps_file.js', // Local do arquivo de etapas
-    tela_login: "./pages/tela_login.js",
+    loginPage: "./pages/Login.js",
   },
 };
