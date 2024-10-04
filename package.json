@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Rodrigo-Tozatti/Automacao-Mobile-iOS/tree/main#readme",
   "dependencies": {
-    "codeceptjs": "^3.6.5",
+    "codeceptjs": "^3.6.7",
     "webdriverio": "^8.6.3"
   }
 }
