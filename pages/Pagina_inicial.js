@@ -9,6 +9,7 @@ module.exports = {
   //--------------------
 
   validar(tempo) {
+    //pause()
     I.waitForElement(this.botoes.salvar, 2)
     I.seeElement(this.botoes.salvar)
   }
