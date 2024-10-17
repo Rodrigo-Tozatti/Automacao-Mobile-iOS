@@ -2,6 +2,7 @@ exports.config = {
   output: './output',
   helpers: {
     Appium: {
+      defaultWaitForAction: 500,
       appiumV2: true,
       app: '/Users/rodrigotozatti/Repositorio-iOS/Automacao-Mobile-iOS/App-iOS/qazandoapp.app',
       desiredCapabilities: {
@@ -29,10 +30,10 @@ exports.config = {
   },
   timeout: null,
   hooks: [],
-  gherkin: {
+  /*gherkin: {
     features: './features/*.feature',
     steps: ['./step_definitions/steps.js']
-  },
+  },*/
   plugins: {
     screenshotOnFail: {
       enabled: true
@@ -65,5 +66,5 @@ exports.config = {
     }
   ],
   name: 'automation_appium',
-  //tests: './testes/*_test.js'
+  tests: './testes/*_test.js'
 }
