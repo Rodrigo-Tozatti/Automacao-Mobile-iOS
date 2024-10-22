@@ -7,7 +7,7 @@ const codigo = require ('../utils/codigo.js')
 const nomeCompleto = require ('../utils/fakerbrasil.js');
 const variaveis_geral = require('../utils/variaveis_geral.js');
 
-Scenario.only('Cadastrar aluno com sucesso',  () => {
+Scenario('Cadastrar aluno com sucesso',  () => {
 
     const codigo4 = codigo.codigo4Digitos() // criar a variável para que na tela utilize o mesmo código em vários campos
     const nomeAluno = nomeCompleto.nomeFaker() // criar variável para que na tela utilize o mesmo código em vários campos
