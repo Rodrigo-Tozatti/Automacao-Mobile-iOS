@@ -1,0 +1,306 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-22T13:20:15.942Z",
+    "end": "2024-10-22T13:20:45.389Z",
+    "duration": 29447,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "9065f5fd-1680-48e3-a7c5-1c15c24df50f",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab1cc5cc-81c1-4f70-9cd3-26cd933fab2b",
+          "title": "CT001 - Login na plataforma",
+          "fullFile": "/Users/rodrigotozatti/Repositorio-iOS/Automacao-Mobile-iOS/testes/01-login_test.js",
+          "file": "/testes/01-login_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "CT001 - Login na plataforma \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "fbdac469-7337-439a-902f-0529a467d322",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "CT001 - Login na plataforma \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "c01e4ca3-3c59-484c-a2c4-64abd51eeb47",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "CT001 - Login na plataforma \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "15bbc072-35e3-476d-ab44-39415e8319f3",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "CT001 - Login na plataforma \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "a4df89b0-d6a1-4a7e-9f43-f59713e7a309",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Cenário 01: Realizar login com sucesso",
+              "fullTitle": "CT001 - Login na plataforma: Cenário 01: Realizar login com sucesso",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "pagina_inicialPage } ) => {\n    loginPage.login('teste@teste.com', '123456'),\n    pagina_inicialPage.validar()",
+              "err": {},
+              "uuid": "87cd03c6-7f29-4295-ac0d-8375ddf90c68",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Cenário 02: Tentativa de login com senha errada",
+              "fullTitle": "CT001 - Login na plataforma: Cenário 02: Tentativa de login com senha errada",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login('teste2@teste.com', '123456')\nloginPage.validarErro()",
+              "err": {},
+              "uuid": "35325125-3b13-4e2e-a8c2-0713db586da9",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "87cd03c6-7f29-4295-ac0d-8375ddf90c68",
+            "35325125-3b13-4e2e-a8c2-0713db586da9"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "9c2031e8-98e2-4c93-b847-5433c1267733",
+          "title": "CT002 - Manutenção de alunos",
+          "fullFile": "/Users/rodrigotozatti/Repositorio-iOS/Automacao-Mobile-iOS/testes/02-alunos_test.js",
+          "file": "/testes/02-alunos_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"CT002 - Manutenção de alunos\"",
+              "fullTitle": "CT002 - Manutenção de alunos \"before all\" hook: codeceptjs.beforeSuite in \"CT002 - Manutenção de alunos\"",
+              "timedOut": false,
+              "duration": 2,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "33bfe98a-01a4-4a84-b59e-aeb3ad400096",
+              "parentUUID": "9c2031e8-98e2-4c93-b847-5433c1267733",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"CT002 - Manutenção de alunos\"",
+              "fullTitle": "CT002 - Manutenção de alunos \"before each\" hook: codeceptjs.before in \"CT002 - Manutenção de alunos\"",
+              "timedOut": false,
+              "duration": 8936,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "2e48733e-9e3d-4ed4-a0f5-3f61d11e1a29",
+              "parentUUID": "9c2031e8-98e2-4c93-b847-5433c1267733",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"CT002 - Manutenção de alunos\"",
+              "fullTitle": "CT002 - Manutenção de alunos \"after all\" hook: codeceptjs.afterSuite in \"CT002 - Manutenção de alunos\"",
+              "timedOut": false,
+              "duration": 2,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "87c7fa9f-6117-47a4-aebe-e348bd88a17a",
+              "parentUUID": "9c2031e8-98e2-4c93-b847-5433c1267733",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"CT002 - Manutenção de alunos\"",
+              "fullTitle": "CT002 - Manutenção de alunos \"after each\" hook: finalize codeceptjs in \"CT002 - Manutenção de alunos\"",
+              "timedOut": false,
+              "duration": 1058,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "60231f96-5aed-4acf-a635-1d07c12a1f27",
+              "parentUUID": "9c2031e8-98e2-4c93-b847-5433c1267733",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Cadastrar aluno com sucesso",
+              "fullTitle": "CT002 - Manutenção de alunos: Cadastrar aluno com sucesso",
+              "timedOut": false,
+              "duration": 19443,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const codigo4 = codigo.codigo4Digitos() // criar a variável para que na tela utilize o mesmo código em vários campos\n    const nomeAluno = nomeCompleto.nomeFaker() // criar variável para que na tela utilize o mesmo código em vários campos\n    // login\n    loginPage.login(variaveis_geral.email, variaveis_geral.senha)\n    // manutenção aluno\n    pagina_inicialPage.cadAlunos(codigo4, nomeAluno) // cadastro do aluno\n    pagina_inicialPage.pesquisaAluno(nomeAluno)\n    pagina_inicialPage.validarAluno(codigo4)",
+              "err": {},
+              "uuid": "92cd028d-8ff2-4e92-b42b-1ed41e0a1e29",
+              "parentUUID": "9c2031e8-98e2-4c93-b847-5433c1267733",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "92cd028d-8ff2-4e92-b42b-1ed41e0a1e29"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19443,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.7.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {},
+      "version": "6.2.0"
+    }
+  }
+}
