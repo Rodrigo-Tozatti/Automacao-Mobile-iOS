@@ -23,11 +23,9 @@ exports.config = {
   },
   mocha: {},
   bootstrap: async () => {
-    //console.log('Iniciando bootstrap...');
     await server.start(); 
   },
   teardown: async () => {
-    //console.log('Executando teardown...');
     await server.stop(); 
   },
   timeout: null,

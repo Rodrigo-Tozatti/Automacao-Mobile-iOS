@@ -27,7 +27,7 @@ login(email, senha) {
 
 validarErro() {
   //pause()
-  I.waitForElement(this.mensagem.erro, 2)
+  //I.waitForElement(this.mensagem.erro, 2)
   I.seeElement(this.mensagem.erro)
 }
 
