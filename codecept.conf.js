@@ -1,3 +1,5 @@
+const server = require ('./server/server.js')
+
 exports.config = {
   output: './output',
   helpers: {
@@ -21,12 +23,12 @@ exports.config = {
   },
   mocha: {},
   bootstrap: async () => {
-    console.log('Iniciando bootstrap...');
-    //await startServer('./server/server.js'); // Inicia o processo do bootstrap (neste caso, apenas exibe uma mensagem)
+    //console.log('Iniciando bootstrap...');
+    await server.start(); 
   },
   teardown: async () => {
-    console.log('Executando teardown...');
-    //await stopServer('./server/server.js'); // Executa o teardown (neste caso, apenas exibe uma mensagem)
+    //console.log('Executando teardown...');
+    await server.stop(); 
   },
   timeout: null,
   hooks: [],
