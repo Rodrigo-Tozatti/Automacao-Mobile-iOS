@@ -1,15 +1,15 @@
-const steps = require('./step_definitions/*.js')
+//const steps = require('./step_definitions/*.js')
 
 exports.config = {
   output: './output',
   helpers: {
     Appium: {
       appiumV2: true,
-      url: 'http://127.0.0.1:4723/',
-      app: '/Users/rodrigotozatti/Repositorio-iOS/Automacao-Mobile-iOS/App-iOS/qazandoapp.app',
+      url: 'http://192.168.121.81:4723/',
+      app: '/Users/rodrigorossetitozatti/MacBook-repositorio/Automacao-Mobile-iOS/App-iOS/qazandoapp.app',
       desiredCapabilities: {
         platformName: 'iOS',
-        platformVersion: '16.2',
+        platformVersion: '18.2',
         deviceName: 'iPhone 14 Pro Max',
         automationName: 'XcUiTest'
       },
@@ -26,10 +26,10 @@ exports.config = {
   timeout: null,
   //teardown: null,
   hooks: [],
-  gherkin: {
+  /*gherkin: {
     features: './features/*.feature',
     steps: ['./step_definitions/*.js']
-  },
+  },*/
   plugins: {
     screenshotOnFail: {
       enabled: true
@@ -61,5 +61,5 @@ exports.config = {
     }
   ],
   name: 'automation_appium',
-  //tests: './Testes_Mobile/*_test.js'
+  tests: './Testes_Mobile/*_test.js'
 }

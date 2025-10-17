@@ -1,7 +1,7 @@
 const { I } = inject();
 const step_definitions = require('./*.js')
 
-Given('eu preecnha o email', () => {
+/*Given('eu preecnha o email', () => {
   I.fillField('~email', 'teste@teste.com');
 });
 
@@ -16,4 +16,4 @@ When('clicar no botão Entrar', () => {
 Then('o App deve fazer o login na plataforma e validar o botão Salvar', () => {
   I.waitForElement('~salvar', 3)
     I.seeElement('~salvar');
-});
+});*/
